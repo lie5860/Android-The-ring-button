@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="你好！"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/split_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/total1111111" >
+    </ImageView>
+
+    <com.example.opendor.TrapezoidImageButton
+        android:id="@+id/telId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/a"
+        android:tag="telId1" />
+
+    <com.example.opendor.TrapezoidImageButton
+        android:id="@+id/telId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/b"
+        android:tag="telId12" />
+
+    <com.example.opendor.TrapezoidImageButton
+        android:id="@+id/telId3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/c"
+        android:tag="telId3" />
+
+    <com.example.opendor.TrapezoidImageButton
+        android:id="@+id/telId4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/d"
+        android:tag="telId4" />
+
+    <com.example.opendor.TrapezoidImageButton
+        android:id="@+id/telId5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/e"
+        android:tag="telId5" />
+
+    <com.example.opendor.TrapezoidImageButton
+        android:id="@+id/telId6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/f"
+        android:tag="telId6" />
+
+    <Button
+        android:id="@+id/bill"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/clear"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/local_order"
+        android:gravity="center"
+        android:onClick="bill"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/clear_data"
+        android:gravity="center"
+        android:onClick="clear"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@id/clear"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/start_menu"
+        android:gravity="center"
+        android:onClick="order"
+        android:textSize="20sp" />
+
+</RelativeLayout>
