@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 
 public class TrapezoidImageButton extends ImageView {
-
+	Bitmap bitmap;
     public TrapezoidImageButton(Context context, AttributeSet attrs, int defStyle) {
     super(context, attrs, defStyle);
     }
@@ -34,7 +34,10 @@ public class TrapezoidImageButton extends ImageView {
     }
 
     protected boolean isTouchPointInView(float localX, float localY){
-    Bitmap bitmap = Bitmap.createBitmap(getWidth(), getHeight(), Config.ARGB_8888);
+    if(bitmap!=null){
+    	bitmap=null;
+    }
+     bitmap = Bitmap.createBitmap(getWidth(), getHeight(), Config.ARGB_4444);
     Canvas canvas = new Canvas(bitmap);
     draw(canvas);
     int x = (int)localX;
